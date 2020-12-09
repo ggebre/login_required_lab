@@ -1,0 +1,9 @@
+<h1> NEW </h1>
+
+<%= form_tag('/sessions/create') do %>
+    <%= label_tag 'Name' %><br>
+    <%= text_field_tag 'name' %><br>
+    <%= submit_tag 'Submit Username'%>
+<% end %>
+
+<%= link_to 'Logout', sessions_destroy_path %>
